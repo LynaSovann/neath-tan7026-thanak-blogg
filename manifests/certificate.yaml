@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: neath-tan7026-thanak-blogg-certificate
+  namespace: neath-tan7026-thanak-blogg
+spec:
+  secretName: neath-tan7026-thanak-blogg-secret-tls
+  commonName: thanak-blog-website.assessify.org
+  dnsNames:
+  - thanak-blog-website.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
