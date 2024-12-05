@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: neath-tan7026-thanak-blogg-container
-          image: pipejet/neath-tan7026-thanak-blogg:0
+          image: pipejet/neath-tan7026-thanak-blogg:1
           ports:
             - containerPort: 5173
