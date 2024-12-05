@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neath-tan7026-thanak-blogg-deployment
+  labels:
+    app: neath-tan7026-thanak-blogg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: neath-tan7026-thanak-blogg
+  template:
+    metadata:
+      labels:
+        app: neath-tan7026-thanak-blogg
+    spec:
+      containers:
+        - name: neath-tan7026-thanak-blogg-container
+          image: pipejet/neath-tan7026-thanak-blogg:0
+          ports:
+            - containerPort: 5173
